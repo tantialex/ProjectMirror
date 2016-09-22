@@ -1,0 +1,107 @@
+body{
+  background-color:black;
+  color:white;
+  font-size:24px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+  letter-spacing: 1.2px;
+  margin:0;
+}
+#Clock{
+  position:absolute;
+  top:2px;
+  right:2px;
+  width:320px;
+  height:300px;
+}
+#Weather{
+  top:2px;
+  left:2px;
+  width:600px;
+  height:400px;
+}
+#Tasks{
+  position:absolute;
+  bottom:2px;
+  left:2px;
+  width:500px;
+  height:400px;
+}
+#Notif{
+  position:absolute;
+  top:2px;
+  left:704px;
+  width:calc(100% - 1112px);
+  height:50px;
+}
+.block{
+  position:absolute;
+  border:2px solid white;
+}
+.wrapper{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+#NotifText{
+  width:100%;
+  text-align:center;
+}
+#NotifText p{
+  position:absolute;
+  top:50%;
+  transform:translate(0,-50%);
+}
+#Tasks .task_card{
+  position:relative;
+  display:flex;
+  flex-flow: row;
+  width:100%;
+  height:115px;
+}
+#Tasks .task_card .task_image{
+  flex: 0 1 100px;
+  width:100px;
+  height:100px;
+}
+#Tasks .task_card .image{
+  position:absolute;
+  opacity:0.75;
+  width:80%;
+  height:80%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+#Tasks .text_panel{
+  flex: 1 1 auto;
+  margin-top:1%;
+  margin-bottom:1%;
+}
+#Tasks .task_header{
+  position:relative;
+  font-size:20px;
+  height:30px;
+  clear:both;
+}
+#Tasks .task_title{
+  float:left;
+
+}
+#Tasks .task_completed{
+  float:right;
+  margin-right:10px;
+}
+#Tasks .task_description{
+  font-size:16px;
+  line-height: 1.65em;
+  width:400px;
+}
+#Tasks .task_date{
+  opacity:0.75;
+  position:absolute;
+  bottom:5px;
+  right:10px;
+  font-size:14px;
+}
