@@ -1,21 +1,20 @@
 <html>
   <head>
     <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="realtime.js"></script>
+    <script src="firebase-tasks.js" defer></script>
+    <script src="clock.js" defer></script>
   </head>
   <body>
     <div id="Clock">
       <canvas id="analogClock" width="320" height="320"/>
-      <script src="clock.js"></script>
     </div>
     <div id="Tasks">
       <div class="wrapper">
-        <?php
-          include_once("block-tasks.php");
-          buildTasks();
-        ?>
+        <div class="absolute_wrapper" style="position:absolute;bottom:0;">
+        </div>
       </div>
     </div>
     <div id="Weather" class="block">
